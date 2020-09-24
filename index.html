@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <meta charset="UTF-8" >
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" >
+    
+    <title>Art Generator</title>
+    <style>
+        .specialanchor 
+        {
+            text-align: center;
+            position: relative;
+            background-color: yellow;
+            bottom: 0;
+        }
+        
+    </style>
+    <link rel="stylesheet" type="text/css" href="final.css">
+    
+    <script src="jquery-3.4.1.min.js">
+    </script>
+    
+     <script src="dots.js">
+    </script>
+</head>
+
+
+<body id="lockscreen">
+   
+    <div>
+  <h1> Art Generator
+   </h1>
+    
+    
+<!--    <button><a href="explanation.html">EXPLANATION</a></button>-->
+    </div>
+    <div><button type="button" onclick = "lessDots()"> Bigger Dots </button> 
+    <button type="button" onclick="moreDots()">Smaller Dots</button>
+    <button type="button" onclick = "randomize()">   Random   </button> 
+    <button type="button" onclick="mildRand()">Mild Random</button>
+    <br>
+    <input id="container" type="range" min="50" max="125" step="1" value="75" onchange="adjust(this.value)">
+    
+    </div>
+
+   <br>
+    <canvas id="dotView" width="360" height="360"  style = "background-color: greenyellow">
+        <p>Your browser does not support the canvas tag. At the time of writing, Firefox, Opera, and Chrome support this tag.</p>
+        <p>Here's an <a href="/pix/html_5/tags/html_canvas_tag.gif">image of what it's supposed to look like</a>
+    </canvas>
+        
+    
+</body>
+
+</html>
